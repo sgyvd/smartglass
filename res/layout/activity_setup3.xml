@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/content_textview_text"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"
+        android:text="你知道吗？\n你每天需要的饮水量（根据您的个人信息）\n约为~" />
+
+    <TextView
+        style="@style/content_textview_text"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dip"
+        android:text="2016ml"
+        android:textColor="#000000"
+        android:textSize="40sp" 
+        />
+
+    <Switch
+        android:id="@+id/switch_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/gradient_setup2_box"
+        android:text="每日饮水计划"
+        android:textOff="自定义"
+        android:textOn="推荐值" 
+        android:checked="true"
+        />
+    
+    <TextView 
+        style="@style/content_textview_text"
+        android:text="每个人每日所需的饮水量根据个人身体情况有很大的差异，选择推荐值，系统将自动喂你推荐每天的合理饮水量"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:textSize="15sp"
+        />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online" />
+    </LinearLayout>
+
+   <Button 
+       android:layout_width="match_parent"
+       style="@style/content_button_next"
+       android:text="完成"
+       android:layout_marginTop="10dip"
+       android:layout_marginLeft="10dip"
+       />
+       
+
+</LinearLayout>

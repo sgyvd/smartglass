@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0FB"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="@drawable/gradient_setup2_box"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cup_small_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/content_textview_text"
+                android:text="xxx的i-Cup" />
+
+            <TextView
+                style="@style/content_textview_text"
+                android:text="序列号：" />
+
+            <TextView
+                style="@style/content_textview_text"
+                android:text="电量：100%" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:layout_weight="1"
+        android:text="请完善您的个人信息"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <GridView
+        android:id="@+id/gv_setup_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="3"
+        android:numColumns="2" >
+    </GridView>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+    </LinearLayout>
+
+    <Button
+        style="@style/content_button_next"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_weight="1" />
+
+</LinearLayout>
