@@ -1,56 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<TabHost
+    android:id="@android:id/tabhost"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:background="@drawable/home_bg" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:text="15:00"
-        android:textColor="#66C2E9"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <RelativeLayout
+    android:layout_width="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dip"
-        android:layout_alignParentBottom="true" >
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:visibility="gone"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1">
+        </FrameLayout>
+
 
         <RadioGroup
+            android:gravity="center_vertical"
+            android:id="@+id/tab_radio_group"
+            android:layout_gravity="bottom"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dip"
             android:background="@drawable/bottom_bg"
             android:orientation="horizontal" >
 
             <RadioButton
+                android:id="@+id/tab_alarm"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:button="@null"
+                android:layout_height="wrap_content"
                 android:background="@drawable/tab_selector_alarm"
-                 />
-            <RadioButton
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:button="@null"
-                android:background="@drawable/tab_selector_plan"
-                 />
-            <RadioButton
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:button="@null"
-                android:background="@drawable/tab_selector_chart"
-                 />
-            <RadioButton
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:button="@null"
-                android:background="@drawable/tab_selector_more"
-                 />
-        </RadioGroup>
-    </RelativeLayout>
+                android:button="@null" />
 
-</RelativeLayout>
+            <RadioButton
+                android:id="@+id/tab_plan"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_selector_plan"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/tab_chart"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_selector_chart"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/tab_more"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_selector_more"
+                android:button="@null" />
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>

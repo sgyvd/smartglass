@@ -3,5 +3,7 @@
 
     <string name="app_name">智能水杯</string>
     <string name="hello_world">Hello world!</string>
+    <string name="home_alarm">提醒</string>
+    <string name="home_plan">计划</string>
 
 </resources>
