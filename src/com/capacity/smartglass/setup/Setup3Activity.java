@@ -1,9 +1,12 @@
-package com.capacity.smartglass;
+package com.capacity.smartglass.setup;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.capacity.smartglass.BaseSetupActivity;
+import com.capacity.smartglass.HomeActivity;
+import com.capacity.smartglass.R;
 
 public class Setup3Activity extends BaseSetupActivity {
 	

@@ -1,8 +1,6 @@
-package com.capacity.smartglass;
+package com.capacity.smartglass.setup;
 
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +10,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
+
+import com.capacity.smartglass.BaseSetupActivity;
+import com.capacity.smartglass.R;
 
 public class Setup2Activity extends BaseSetupActivity {
 

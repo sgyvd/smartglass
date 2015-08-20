@@ -11,6 +11,8 @@ import android.os.Message;
 import android.view.animation.AlphaAnimation;
 import android.widget.TextView;
 
+import com.capacity.smartglass.setup.Setup1Activity;
+
 public class SplashActivity extends Activity {
 
 	private TextView tv_splash_version;
